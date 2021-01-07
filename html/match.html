@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/match.css">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="tbg">
+        <div class="match bg-dark">
+            <div class="mtext">It's a Match!</div>
+            <div class="center-image">
+                <div class="m2"><img src="/img/download.png" /></div>
+                <div class="m1"><img id="company-image" src="" /></div>
+            </div>
+            <div class="sendmsg"><span id="boxMatch"></span></div>
+            <br>
+            <br>
+            <br>
+            <div class="btn-match">
+                <a class="btn btn-success" href="/html/one-company.html" role="button" id="company-url">Yes</a>
+                <a class="btn btn-danger" href="/html/index.html" role="button">No</a>
+            </div>
+            <div class="share"> Tell Your Friends!</div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+        <script>
+            $(function() {
+
+                var textMatch = document.getElementById("boxMatch");
+
+                textMatch.innerText = localStorage.getItem("name") ? localStorage.getItem("name") + ", do you accept?" : "Mr. No nobody, do you accept?";
+
+                var companyUrlElement = document.getElementById("company-url")
+                companyUrlElement.setAttribute("href", localStorage.getItem("companyUrlMatch"))
+
+                var companyImageElement = document.getElementById("company-image")
+                companyImageElement.setAttribute("src", localStorage.getItem("companyImageMatch"))
+
+            })
+        </script>
+</body>
+
+
+</html>

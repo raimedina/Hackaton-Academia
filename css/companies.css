@@ -1,0 +1,34 @@
+.center-title {
+    position: absolute;
+    left: 900px;
+    top: 10px
+}
+
+.logo-image {
+    height: 40px;
+    position: relative;
+    top: -8px;
+}
+
+.container {
+    text-align: justify;
+}
+
+.company-logo {
+    max-width: 90%;
+    max-height: 100%;
+    position: relative;
+    top: 100px;
+}
+
+.mercedes {
+    top: -10px;
+}
+
+.microsoft {
+    top: 30px;
+}
+
+.lg-text {
+    margin-left: 32px;
+}
